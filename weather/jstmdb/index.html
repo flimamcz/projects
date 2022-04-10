@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        .ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        li{
+            width: 200px;
+            height: 200px;
+            padding: 10px 0;
+        }
+
+        .item{
+            width: 300px;
+            height: 200px;
+            display: block;
+            margin: 30px;
+        }
+    </style>
+
+    <ul class="ul">
+        
+    </ul>
+
+    <script>
+        const ul = document.querySelector('.ul')
+        
+        fetch(BASE_URL).then(r => r.json()).then(json => {
+            json.results.map(({title, poster_path, vote_average}) => {
+                const img = document.createElement('img')
+                const li = document.createElement('li')
+                img.setAttribute('src', `https://image.tmdb.org/t/p/w500${poster_path}`)
+                const HTML = `<div class="item">
+                        <h1 class="title">${title}</h1>
+                        <p class="vote">${vote_average}</p>
+                </div>`
+                li.innerHTML = HTML
+                ul.appendChild(li)
+            })
+        })
+    </script>
+    
+</body>
+</html>

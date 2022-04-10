@@ -1,0 +1,46 @@
+.grid{
+    display: flex;
+    flex-direction: column;
+    width: min(80%, 1220px);
+    margin: 20px auto;
+}
+
+.container-search{
+    text-align: center;
+}
+
+.container-search h2{
+    font-size: 3.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container-search ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.container-search ul li button{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-family: 'League Spartan', sans-serif;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-search ul li button span{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form form{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+

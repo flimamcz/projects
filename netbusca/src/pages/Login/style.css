@@ -1,0 +1,78 @@
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+.container-form {
+    width: min(50%, 600px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 40px auto;
+}
+
+.profile h1{
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputs input{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 18px 24px;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+.inputs input:focus{
+    transition: .3s;
+    border: 1px solid greenyellow;
+}
+
+.buttons{
+    width: 60%;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 16px 24px;
+    border: none;
+    padding: 18px 24px;
+    border-radius: 0.25rem;
+    outline: none;
+    background-color: #ee3737;
+    color: #fff;;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.buttons button:first-of-type{
+    background-color: yellowgreen;
+    color: #232F34;
+}
+
+
